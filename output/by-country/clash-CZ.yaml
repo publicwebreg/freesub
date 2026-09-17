@@ -5,14 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - xiaohe
-  server: 153.76.185.186
-  port: 3090
+  server: 64.225.110.247
+  port: 2083
   udp: true
   type: vless
-  uuid: 1e8565d3-d5fe-4ade-aaf3-30c186b4538c
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /acg/buy/ajax?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
