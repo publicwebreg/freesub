@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇮🇶 IQ 01 - xiaohe
+  server: 104.21.64.165
+  port: 443
+  udp: true
+  type: trojan
+  password: Telegram_healer_config
+  sni: 3w2hk6Zj92orJcJedMI77HzC.Ny49NuZ6g33rYkoWaZQUNl-B9GuN5T.wOrkERs.DEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tr/owxywx7VjYMLyGu2JOQYjHwV67l?ed=2560
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇮🇶 IQ 01 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇮🇶 IQ 01 - xiaohe
+rules:
+- MATCH,PROXIES
