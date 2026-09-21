@@ -15,21 +15,21 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaohe
-  server: 104.18.26.90
+  server: 151.242.189.162
   port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: v2ray.simspeedup.com
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /ws
+    path: /chat?ed=2560
     headers:
-      Host: v2ray.simspeedup.com
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
