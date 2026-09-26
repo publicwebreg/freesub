@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaohe
-  server: 82.38.64.237
+  server: 82.38.64.229
   port: 8443
   udp: true
   type: hysteria2
@@ -35,18 +35,16 @@ proxies:
     headers:
       Host: cf9.rumedia-cdn.com
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaohe
-  server: 45.90.59.15
+  server: 185.18.250.245
   port: 443
   udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
