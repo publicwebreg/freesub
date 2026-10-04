@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
-  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
+  server: 7b0450c8-tmm5c0-trg4wh-z65w.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
-  skip-cert-verify: false
+  password: a2313fba-74a6-11ed-a8bf-f23c91cfbbc9
+  sni: 7b0450c8-tmm5c0-trg4wh-z65w.hk3.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
